@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -29,10 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -2788,6 +2788,12 @@
 <p>Applicable to: UnitTriggerable</p>
 </details>
 <details class="example">
+<summary>[<abbr title="`This Unit` or `Target Unit`.">unitTriggerTarget</abbr>] takes over the City-State owning the tile it's standing on</summary>
+<p>Only allows taking over City-States not at war with the unit's root nation. Does not require a friendship or an alliance with the target City-State.</p>
+<p>Example: "[This Unit] takes over the City-State owning the tile it's standing on"</p>
+<p>Applicable to: UnitTriggerable</p>
+</details>
+<details class="example">
 <summary>[<abbr title="`This Unit` or `Target Unit`.">unitTriggerTarget</abbr>] gets a name from the [<abbr title="The name of a unit name group found in UnitNameGroups.json, or one of their unique tags.">unitNameGroup</abbr>] group</summary>
 <p>Example: "[This Unit] gets a name from the [Scientist] group"</p>
 <p>Applicable to: UnitTriggerable</p>
@@ -3624,6 +3630,7 @@
 </details>
 <details class="example">
 <summary>Earn [<abbr title="This indicates a whole number, possibly with a + or - sign, such as `2`, `+13`, or `-3`.">amount</abbr>]% of killed [mapUnitFilter] unit's [<abbr title="`Cost` or `Strength`.">costOrStrength</abbr>] as [<abbr title="The name of any stockpiled resource.">stockpile</abbr>]</summary>
+<p>Does not apply to units destroyed by nuclear explosions, which do not count as combat defeats.</p>
 <p>Example: "Earn [3]% of killed [Wounded] unit's [Cost] as [Mana]"</p>
 <p>Applicable to: Global, Unit</p>
 </details>
@@ -4102,6 +4109,7 @@
 </details>
 <details class="example">
 <summary>Earn [<abbr title="This indicates a whole number, possibly with a + or - sign, such as `2`, `+13`, or `-3`.">amount</abbr>]% of [mapUnitFilter] unit's [<abbr title="`Cost` or `Strength`.">costOrStrength</abbr>] as [<abbr title="The name of any stockpiled resource.">stockpile</abbr>] when killed within 4 tiles of a city following this religion</summary>
+<p>Does not apply to units destroyed by nuclear explosions, which do not count as combat defeats.</p>
 <p>Example: "Earn [3]% of [Wounded] unit's [Cost] as [Mana] when killed within 4 tiles of a city following this religion"</p>
 <p>Applicable to: FollowerBelief</p>
 </details>
@@ -4836,11 +4844,13 @@
 </details>
 <details class="example">
 <summary>Earn [<abbr title="This indicates a whole number, possibly with a + or - sign, such as `2`, `+13`, or `-3`.">amount</abbr>]% of killed [mapUnitFilter] unit's [<abbr title="`Cost` or `Strength`.">costOrStrength</abbr>] as [<abbr title="The name of any stockpiled resource.">stockpile</abbr>]</summary>
+<p>Does not apply to units destroyed by nuclear explosions, which do not count as combat defeats.</p>
 <p>Example: "Earn [3]% of killed [Wounded] unit's [Cost] as [Mana]"</p>
 <p>Applicable to: Global, Unit</p>
 </details>
 <details class="example">
 <summary>May capture killed [mapUnitFilter] units</summary>
+<p>Does not apply to units destroyed by nuclear explosions, which do not count as combat defeats.</p>
 <p>Example: "May capture killed [Wounded] units"</p>
 <p>Applicable to: Unit</p>
 </details>
@@ -6575,11 +6585,13 @@
 </details>
 <details class="example">
 <summary>&lt;upon defeating a [mapUnitFilter] unit&gt;</summary>
+<p>Does not apply to units destroyed by nuclear explosions, which do not count as combat defeats.</p>
 <p>Example: "&lt;upon defeating a [Wounded] unit&gt;"</p>
 <p>Applicable to: UnitTriggerCondition</p>
 </details>
 <details class="example">
 <summary>&lt;upon being defeated&gt;</summary>
+<p>Does not apply to units destroyed by nuclear explosions, which do not count as combat defeats.</p>
 <p>Applicable to: UnitTriggerCondition</p>
 </details>
 <details class="example">
@@ -6810,10 +6822,10 @@ There is a conversion affecting dashes and leading/trailing blanks. Please make 
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>
